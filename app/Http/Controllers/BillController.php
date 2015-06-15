@@ -9,6 +9,7 @@
 
         /**
          * Shows bill with given id
+         *
          * @param int $id
          * @return view
          */

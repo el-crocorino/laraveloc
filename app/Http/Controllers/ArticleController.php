@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php
+
+    namespace App\Http\Controllers;
 
     /**
      * Article acces control class
@@ -7,6 +9,7 @@
 
         /**
          * Shows article with given id
+         *
          * @param int $id
          * @return view
          */
