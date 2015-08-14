@@ -30,7 +30,7 @@ get('bill/{id}', [
     'as' => 'bill'
 ])->where('id', '[0-9]+');
 
-#Route::controller('users', 'UsersController');
-get('users', 'UsersController@getInfos');
-post('users', 'UsersController@postInfos');
+Route::controller('users', 'UsersController');
+#get('users', 'UsersController@getInfos');
+#post('users', 'UsersController@postInfos');
 
