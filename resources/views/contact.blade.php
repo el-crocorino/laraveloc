@@ -1,5 +1,9 @@
 @extends('main');
 
+@section('title')
+    Demande de contact
+@stop
+
 @section('content')
 <br>
 <div class="col-sm-offset-3 col-sm-6">
