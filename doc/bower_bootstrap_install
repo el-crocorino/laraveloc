@@ -1,0 +1,9 @@
+root@debian:~#  apt-get install npm
+root@debian:~# curl -sL https://deb.nodesource.com/setup_0.12 | bash -
+root@debian:~# apt-get install -y nodejs
+root@debian:~# npm install -g bower
+olivier@debian:/var/www/www-dev/laraveloc(feature/17)$ bower install bootstrap -S
+olivier@debian:/var/www/www-dev/laraveloc(feature/17)$ bower install jquery -S
+
+
+
