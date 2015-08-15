@@ -26,9 +26,11 @@ class ImageUploadController extends Controller {
             if ($image->move($path, $name)) {
                 return view('imageuploadsuccess');
             }
+            
         }
         
-        return redirect('imageupload/form')->with('errors', 'Picture could not be uploaded');
+        return redirect('imageupload/form')->with('file_upload_error', 'Picture could not be uploaded');
         
     }
+    
 }

@@ -9,8 +9,8 @@
         <div class="panel panel-info">
             <div class="panel-heading">Envoi d'une image</div>
             <div class="panel-body">
-                @if(session()->has('errors'))
-                    <div class="alert alert-danger">{!! session('errors') !!}</div>
+                @if(session()->has('file_upload_error'))
+                    <div class="alert alert-danger">{!! session('file_upload_error') !!}</div>
                 @endif
                 {!! Form::open(['url' => 'imageupload/form', 'files' => true]) !!}
                     <div class="form-group">
