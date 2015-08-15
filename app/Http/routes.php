@@ -34,3 +34,5 @@ Route::controller('users', 'UsersController');
 #get('users', 'UsersController@getInfos');
 #post('users', 'UsersController@postInfos');
 
+Route::controller('contact', 'ContactController');
+
