@@ -1,4 +1,4 @@
-@extends('template')
+@extends('main')
 @section('title')
     Envoi d'une image
 @stop

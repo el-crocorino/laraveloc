@@ -35,5 +35,5 @@ Route::controller('users', 'UsersController');
 #post('users', 'UsersController@postInfos');
 
 Route::controller('contact', 'ContactController');
-Route::controller('image-upload','ImageUploadController');
+Route::controller('imageupload','ImageUploadController');
 

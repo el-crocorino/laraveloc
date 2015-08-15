@@ -16,7 +16,7 @@ class ImageUploadController extends Controller {
         
         if ($image->isValid()) {
             
-            $path = config('images.path');
+            $path = config('images.paths');
             $extension = $image->getClientOriginalExtension();
             
             do {
@@ -24,11 +24,11 @@ class ImageUploadController extends Controller {
             } while (file_exists($path . '/' . $name));
             
             if ($image->move($path, $name)) {
-                return view('image-upload-success');
+                return view('imageuploadsuccess');
             }
         }
         
-        return redirect('image-upload/form')->with('errors', 'Picture could not be uploaded');
+        return redirect('imageupload/form')->with('errors', 'Picture could not be uploaded');
         
     }
 }
