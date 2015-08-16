@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ImageUploadRequest;
+use App\Handlers\ImageHandlerInterface;
 
 class ImageUploadController extends Controller {
     
@@ -10,23 +11,10 @@ class ImageUploadController extends Controller {
         return view('ImageUpload');
     }
     
-    public function postForm(ImageUploadRequest $request) {
+    public function postForm(ImageUploadRequest $request, ImageHandlerInterface $handler) {
         
-        $image = $request->file('image');
-        
-        if ($image->isValid()) {
-            
-            $path = config('images.paths');
-            $extension = $image->getClientOriginalExtension();
-            
-            do {
-                $name = str_random(10) . '.' . $extension;
-            } while (file_exists($path . '/' . $name));
-            
-            if ($image->move($path, $name)) {
-                return view('imageuploadsuccess');
-            }
-            
+        if ($handler->save($request->file('image'))) {
+            return view('imageuploadsuccess');
         }
         
         return redirect('imageupload/form')->with('file_upload_error', 'Picture could not be uploaded');
