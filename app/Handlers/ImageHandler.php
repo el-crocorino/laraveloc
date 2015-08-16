@@ -5,7 +5,7 @@ namespace App\Handlers;
 class ImageHandler implements ImageHandlerInterface {
     
     public function save($image) {
-        
+
         if ($image->isValid()) {
             
             $path = config('images.paths');

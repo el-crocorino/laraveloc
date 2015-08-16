@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ImageUploadRequest;
-use App\Handler\ImageHandlerInterface;
+use App\Handlers\ImageHandlerInterface;
 
 class ImageUploadController extends Controller {
     
