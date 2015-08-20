@@ -5,7 +5,7 @@
 
 @section('content')
     <br>
-    <div class="col-sm-offest-4 col-sm-4">
+    <div class="col-sm-offset-4 col-sm-4">
         <div class="panel panel-info">
             <div class="panel-heading">Envoi d'une image</div>
             <div class="panel-body">
