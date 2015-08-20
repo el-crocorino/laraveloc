@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Email extends Model
 {
-    protected $table = 'emailsss';
+    protected $table = 'emails';
     public $timestamps = false;
 }

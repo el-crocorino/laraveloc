@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controller;
+namespace App\Http\Controllers;
 
 use App\Email;
 use App\Http\Requests\EmailRequest;
@@ -13,7 +13,7 @@ class EmailController extends Controller {
     
     public function postForm(EmailRequest $request) {
         
-        $email = new Email();
+        $email = new Email;
         $email->email = $request->input('email');
         $email->save();
         

@@ -11,7 +11,7 @@
             <div class="panel-body">
                 {!! Form::open(['url' => 'email/form']) !!}
                     <div class="form-group {!! $errors->has('email') ? 'has-error' : '' !!}">
-                        {!! Form::email('image', null, ['class' => 'form-control', 'placeholder' => 'Entrez votre e-mail']) !!}
+                        {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Entrez votre e-mail']) !!}
                         {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
                     </div>
                     {!! Form::submit('Envoyer', ['class' => 'btn btn-info pull-right']) !!}

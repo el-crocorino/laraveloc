@@ -36,5 +36,5 @@ Route::controller('users', 'UsersController');
 
 Route::controller('contact', 'ContactController');
 Route::controller('imageupload','ImageUploadController');
-Route::controller('email, EmailController');
+Route::controller('email', 'EmailController');
 
